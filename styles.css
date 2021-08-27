@@ -61,18 +61,18 @@ body {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.20);
 }
 
-#add {
+.add {
     background-color: #FED1ED;
 }
 
-#subtract {
+.subtract {
     background-color: #FFEE82;
 }
 
-#multiply {
+.multiply {
     background-color: #9ECEFE;
 }
 
-#divide {
+.divide {
     background-color: #ffffef;
 }

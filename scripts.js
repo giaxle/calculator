@@ -69,15 +69,15 @@ keys.addEventListener('click', e => {
         action === 'multiply' ||
         action === 'divide'
     ) {
-        if (calculator.dataset.firstValue !== '') {
-            const firstValue = calculator.dataset.firstValue;
-            const operator = calculator.dataset.operator;
-            const secondValue = displayOutput
-            output.textContent = calculate(firstValue, operator, secondValue);
-            calculator.dataset.firstValue = output.textContent;
-            console.log('It worked!');
-        } else {
-            history.textContent = displayHistory + keyContent;
+        // if (calculator.dataset.firstValue !== '') {
+        //     const firstValue = calculator.dataset.firstValue;
+        //     const operator = calculator.dataset.operator;
+        //     const secondValue = displayOutput
+        //     output.textContent = calculate(firstValue, operator, secondValue);
+        //     calculator.dataset.firstValue = output.textContent;
+        //     console.log('It worked!');
+        // } else {
+        history.textContent = displayHistory + keyContent;
         // key.classList.add('is-depressed');
         calculator.dataset.previousKeyType = 'operator';
         calculator.dataset.firstValue = displayOutput;
@@ -106,25 +106,25 @@ keys.addEventListener('click', e => {
     
 })
 
-const add = (result, n1, n2) => {
-    if (n1 !== '' && n2 !== '') {
-        result = n1 + n2;
-        firstValue = result;
-        return result, firstValue;
-    } else {
-        result = n1 + n2;
-        return result;
-    }
-}
+// const add = (result, n1, n2) => {
+//     if (n1 !== '' && n2 !== '') {
+//         result = n1 + n2;
+//         firstValue = result;
+//         return result, firstValue;
+//     } else {
+//         result = n1 + n2;
+//         return result;
+//     }
+// }
 
-function checkOperand(action) {
-    if (
-        action === 'add' ||
-        action === 'subtract' ||
-        action === 'multiply' ||
-        action === 'divide'
-    ) {
-        const firstValue = displayOutput;
-        const operator = action;
-    }
-}
+// function checkOperand(action) {
+//     if (
+//         action === 'add' ||
+//         action === 'subtract' ||
+//         action === 'multiply' ||
+//         action === 'divide'
+//     ) {
+//         const firstValue = displayOutput;
+//         const operator = action;
+//     }
+// }

@@ -69,21 +69,13 @@ keys.addEventListener('click', e => {
         action === 'multiply' ||
         action === 'divide'
     ) {
-        // if (calculator.dataset.firstValue !== '') {
-        //     const firstValue = calculator.dataset.firstValue;
-        //     const operator = calculator.dataset.operator;
-        //     const secondValue = displayOutput
-        //     output.textContent = calculate(firstValue, operator, secondValue);
-        //     calculator.dataset.firstValue = output.textContent;
-        //     console.log('It worked!');
-        // } else {
+        
         history.textContent = displayHistory + keyContent;
         // key.classList.add('is-depressed');
         calculator.dataset.previousKeyType = 'operator';
         calculator.dataset.firstValue = displayOutput;
         calculator.dataset.operator = action;
         // console.log(action);
-        }
 
     }
 
